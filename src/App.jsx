@@ -111,6 +111,7 @@ export default function App() {
                   color: 'white',
                   '&:hover': { bgcolor: 'primary.dark' },
                   '& .MuiListItemIcon-root': { color: 'white' },
+                  borderRadius: "10px"
                 },
                 '&:hover': {
                   bgcolor: darkMode ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.04)',

@@ -88,7 +88,15 @@ export default function Home() {
                 <Typography variant="h6" fontWeight={600} gutterBottom>
                   {feature.title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    maxWidth: { xs: '100%', sm: '340px', md: '400px' },
+                    width: '100%',
+                    lineHeight: 1.6,
+                  }}
+                >
                   {feature.description}
                 </Typography>
               </CardContent>
