@@ -1,0 +1,10 @@
+.app-root {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
+}
+
+main {
+  flex-grow: 1;
+  padding: 32px;
+}
