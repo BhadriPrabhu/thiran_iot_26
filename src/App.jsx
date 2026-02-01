@@ -23,10 +23,13 @@ import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
+
+import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 // Pages
 import Home from './pages/Home';
+import AmbulanceSimulation from './pages/AmbulanceSimulation';
 import V2ISimulator from './pages/V2ISimulator';
 import V2VSimulator from './pages/V2VSimulator';
 import V2GSimulator from './pages/V2GSimulator';
@@ -83,6 +86,7 @@ export default function App() {
 
   const navItems = [
     { text: 'Home', icon: <HomeIcon />, path: '/' },
+    { text: 'Ambulance Simulation', icon: <MedicalServicesIcon />, path: '/ambulance' },
     { text: 'V2I Simulator', icon: <TrafficIcon />, path: '/v2i' },
     { text: 'V2V Simulator', icon: <TwoWheelerIcon />, path: '/v2v' },
     { text: 'V2G Simulator', icon: <ElectricBoltIcon />, path: '/v2g' },
@@ -236,6 +240,7 @@ export default function App() {
         >
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/ambulance" element={<AmbulanceSimulation />} />
             <Route path="/v2i" element={<V2ISimulator />} />
             <Route path="/v2v" element={<V2VSimulator />} />
             <Route path="/v2g" element={<V2GSimulator />} />
